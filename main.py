@@ -23,7 +23,6 @@ class NeuralNetwork():
 		return self.__sigmoid(dot(inputs, self.synaptic_weights))
 		
 if __name__ == "__main__":
-	
 	neural_network = NeuralNetwork()
 	
 	print "Random starting synptic weights: "
