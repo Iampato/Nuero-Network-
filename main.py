@@ -1,16 +1,13 @@
 #neuro-network
 from numpy import exp, array, random, dot
 
-
 class NeuralNetwork():
 	def __init__(self):
-		random.seed(1)
-		
+		random.seed(1)		
 		self.synaptic_weights = 2* random.random((3, 1)) -1
 		
 	def __sigmoid(self,x):
 		return 1 / (1 + exp(-x))
-		
 	def __sigmoid_derivative(self,x):
 		return x * (1-x)
 			
