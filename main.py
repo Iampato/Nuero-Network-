@@ -16,7 +16,6 @@ class NeuralNetwork():
 			output = self.think(training_set_inputs)
 			error = training_set_outputs - output
 			adjustment = dot(training_set_inputs.T, error * self.__sigmoid_derivative(output))
-			
 			self.synaptic_weights += adjustment
 			
 	def think(self, inputs):
